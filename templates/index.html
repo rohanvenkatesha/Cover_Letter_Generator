@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cover Letter Generator</h1>
+    <form action="/generate" method="post">
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name" required>
+
+        <label for="role_name">Role Name:</label>
+        <input type="text" id="role_name" name="role_name" required>
+
+        <label for="hiring_manager">Hiring Manager Name:</label>
+        <input type="text" id="hiring_manager" name="hiring_manager" required>
+
+        <label for="template">Select Template:</label>
+        <select id="template" name="template" required>
+            {% for key, template in templates.items() %}
+                <option value="{{ key }}">{{ template.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="custom_content">Custom Content (optional):</label>
+        <textarea id="custom_content" name="custom_content"></textarea>
+
+        <input type="submit" value="Generate Cover Letter">
+    </form>
+</body>
+</html>

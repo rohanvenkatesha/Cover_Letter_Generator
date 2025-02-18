@@ -1,0 +1,10 @@
+{
+  "template1": {
+    "name": "Professional Template",
+    "content": "<b>{hiring_manager}</b><br/><b>{company_name}</b><br/><br/>Dear {hiring_manager},<br/><br/>I am excited to apply for the <b>{role_name}</b> position at <b>{company_name}</b>. With my experience in [Your Field], I am confident I can contribute to your team.<br/><br/>[Your specific skills or experiences]<br/><br/>I admire <b>{company_name}</b> for [specific reason], and I am eager to bring my skills to your organization.<br/><br/>Sincerely,<br/>[Your Name]"
+  },
+  "template2": {
+    "name": "Creative Template",
+    "content": "<b>{hiring_manager}</b><br/><b>{company_name}</b><br/><br/>Dear {hiring_manager},<br/><br/>I am writing to express my interest in the <b>{role_name}</b> role at <b>{company_name}</b>. My background in [Your Field] aligns well with the requirements of this position.<br/><br/>[Your specific achievements or experiences]<br/><br/>I am particularly drawn to <b>{company_name}</b> because [specific reason].<br/><br/>Thank you for considering my application. I look forward to the opportunity to discuss how I can contribute to your team.<br/><br/>Best regards,<br/>[Your Name]"
+  }
+}
