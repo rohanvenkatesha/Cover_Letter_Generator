@@ -1,7 +1,3 @@
-Below is a sample `README.md` file for your GitHub repository. This file provides an overview of your project, instructions for setting it up, and details on how to use it.
-
----
-
 # Cover Letter Generator
 
 A web application built with Flask that allows users to generate personalized cover letters in PDF format. Users can input company details, select a template, and optionally provide custom content for the cover letter.
@@ -155,5 +151,3 @@ Enjoy generating your cover letters! 🚀
 1. Replace placeholders like `your-username`, `your.email@example.com`, and `Your Name` with your actual details.
 2. Add a `LICENSE` file if you want to specify a license for your project.
 3. Customize the content to better suit your project.
-
-This `README.md` file will help users understand your project and get started quickly. Let me know if you need further assistance!
